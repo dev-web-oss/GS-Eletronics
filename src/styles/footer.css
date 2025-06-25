@@ -1,0 +1,47 @@
+footer {
+  background-color: var(--color-primary-3);
+  position: relative;
+}
+
+#footer_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8% 24px 8%;
+  align-items: center;
+}
+
+.imgOnda {
+  margin: 0 2px 0 0; /*aqui esta tirando a linha do svg*/
+}
+
+.imgOnda svg {
+  transform: rotate(180deg);
+  color: var(--color-primary-1);
+  bottom: 0;
+  width: 100%;
+}
+
+#copyright {
+  color: var(--color-neutral-1);;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  #footer_items {
+      flex-direction: column;
+      gap: 20px;
+  }
+}
+
+.termos {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.termos img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+}
