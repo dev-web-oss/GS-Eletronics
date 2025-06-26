@@ -61,7 +61,7 @@
 .swiper-container {
   width: 100%;
   overflow: hidden;
-  padding: 20px 0;
+  padding: 20px 0 50px;
   position: relative;
   overflow: visible;
 }
@@ -86,7 +86,7 @@
 
 .swiper-pagination {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   text-align: center;
