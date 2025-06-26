@@ -114,8 +114,9 @@ async function carregarProdutos(categoriaSelecionada, termoBusca = "") {
     if (preco === 0) {
       precoFormatado = "Preço: <i>A combinar</i>";
     } else if (precoPromo > 0 && precoPromo < preco) {
+      const desconto = Math.round(((preco - precoPromo) / preco) * 100);
       precoFormatado = `
-        <small>De: <s>${preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</s></small><br>
+        <small style="margin-right: 5px";>De: <s>${preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</s></small><strong><span style="color:red; font-size: 0.7em;">-${desconto}%</span></strong><br>
         <strong>Por: ${precoPromo.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</strong>
       `;
     } else {
