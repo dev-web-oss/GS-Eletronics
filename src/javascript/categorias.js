@@ -57,17 +57,17 @@ export async function carregarProdutosPorCategoria(categoriaId) {
           <small style="margin-right: 5px;";>De: <s>${preco.toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL",
-          })}</s></small><strong><span style="color:red; font-size: 0.8em;">-${desconto}%</span></strong><br>
+          })}</s></small><strong><span style="color:red; font-size: 0.8rem;">-${desconto}%</span></strong><br>
           <strong>Por: ${precoPromocional.toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL",
-          })}</strong>
+          })}</strong> <span style="font-size:0.9rem;">À vista</span>
         `;
       } else {
-        precoFormatado = preco.toLocaleString("pt-BR", {
+        precoFormatado = `${preco.toLocaleString("pt-BR", {
           style: "currency",
           currency: "BRL",
-        });
+        })}<br><span style="font-size:0.8rem;"> À vista</span>`;
       }
 
       slide.innerHTML = `

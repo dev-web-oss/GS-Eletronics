@@ -78,24 +78,32 @@ document.addEventListener('DOMContentLoaded', async () => {
                     return `Preço: <i>A combinar</i>`;
                   } else if (precoPromocional > 0 && precoPromocional < preco) {
                     const desconto = Math.round(((preco - precoPromocional) / preco) * 100);
+                    const parcela = Number(((precoPromocional * 1.087) / 5).toFixed(2));
+
                     return `
                       <small>De: <s class="preco-antigo">${preco.toLocaleString("pt-BR", {
                         style: "currency",
                         currency: "BRL"
-                      })}</s></small><br>
+                      })}</s></small> <span class="desconto" style="color:red; font-size: 0.95rem;">-${desconto}%</span><br>
                       <strong class="preco-atual">
                         Por: ${precoPromocional.toLocaleString("pt-BR", {
                           style: "currency",
                           currency: "BRL"
                         })}
-                      </strong>
-                        <span class="desconto" style="color:red; font-size: 0.8em;">-${desconto}%</span>
+                      </strong><br> <span style="font-size:0.9rem;">À vista ou 5x de ${parcela.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL"
+                      })}</span>
                     `;
                   } else {
+                    const parcela = Number(((preco * 1.087) / 5).toFixed(2));
                     return `Preço: ${preco.toLocaleString("pt-BR", {
                       style: "currency",
                       currency: "BRL"
-                    })}`;
+                    })}<br> <span style="font-size:0.9rem;">À vista ou 5x de ${parcela.toLocaleString("pt-BR", {
+                        style: "currency",
+                        currency: "BRL"
+                      })}</span>`;
                   }
                 })()
               }
