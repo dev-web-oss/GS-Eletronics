@@ -7,7 +7,7 @@ import { comprarProdutoViaWhatsApp, adicionarAoCarrinho } from "./carrinho.js";
 import "./carrinho.js";
 
 const todasCategorias = [
-  "Acessorio", "Antena", "CaboHDMI", "CaboDeCelular", "Capinhas", "CaixaDeSom", "Campainha",
+  "Acessorio", "Antena", "CaboHDMI", "CaboDeCelular", "CaixaDeSom", "Campainha",
   "CapasDeCelular", "Carregadores", "CartoesDeMemoria", "Chaveiros", "CoposGarrafas",
   "Ferramentas", "FoneDeOuvido", "Lanterna", "Marmita", "Massageador",
   "MiniCompressor", "Mouse", "Projetores", "Radios", "RelogioSmartWatch", "Suporte", "Tvbox", "VideoGame"
