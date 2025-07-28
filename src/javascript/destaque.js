@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnEspaco = document.getElementById('btnWhats');
   if (btnEspaco) {
     btnEspaco.addEventListener('click', () => {
-      window.open('https://wa.me/5511975410555');
+      window.open('https://wa.me/5511919265754');
     });
   }
 });

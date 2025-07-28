@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mensagem += `VALOR TOTAL DA COMPRA: R$ ${totalGeral.toFixed(2)}%0A%0A`;
       mensagem += `Você tem essa lista a pronta entrega?`;
 
-      const numeroWhatsApp = '5511975410555';
+      const numeroWhatsApp = '5511919265754';
       const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
 
       window.open(url, '_blank');
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mensagem += `VALOR TOTAL DA COMPRA: R$ ${totalGeral.toFixed(2)}%0A%0A`;
       mensagem += `Você tem essa lista a pronta entrega?`;
 
-      const numeroWhatsApp = '5511975410555';
+      const numeroWhatsApp = '5511919265754';
       const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
 
       window.open(url, '_blank');
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export function comprarProdutoViaWhatsApp(nome, preco) {
   const mensagem = `Vi este produto no site e gostei:%0A%0AProduto: ${nome}%0AValor: R$ ${parseFloat(preco).toFixed(2)}%0A%0AVoce tem ele a pronta entrega?`;
-  const numeroWhatsApp = '5511975410555';
+  const numeroWhatsApp = '5511919265754';
   const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
   window.open(url, '_blank');
 }
