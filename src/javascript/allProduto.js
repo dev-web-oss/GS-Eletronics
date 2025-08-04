@@ -8,8 +8,8 @@ import "./carrinho.js";
 
 const todasCategorias = [
   "Acessorio", "Antena", "CaboHDMI", "CaboDeCelular", "CaixaDeSom", "Campainha",
-  "CapasDeCelular", "Carregadores", "CartoesDeMemoria", "Chaveiros", "CoposGarrafas",
-  "Ferramentas", "FoneDeOuvido", "Gimbal", "Lanterna", "Marmita", "Massageador",
+  "CapasDeCelular", "Carregadores", "CartoesDeMemoria", "Chaveiros", "CoposGarrafas", "Estabilizador",
+  "Ferramentas", "FoneDeOuvido", "Lanterna", "Marmita", "Massageador",
   "MiniCompressor", "Mouse", "Pilha", "Projetores", "Radios", "RelogioSmartWatch", "Suporte", "Tvbox", "VideoGame"
 ];
 
