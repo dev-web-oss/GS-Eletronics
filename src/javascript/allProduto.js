@@ -9,7 +9,7 @@ import "./carrinho.js";
 const todasCategorias = [
   "Acessorio", "Antena", "CaboHDMI", "CaboDeCelular", "CaixaDeSom", "Campainha",
   "CapasDeCelular", "Carregadores", "CartoesDeMemoria", "Chaveiros", "CoposGarrafas",
-  "Ferramentas", "FoneDeOuvido", "Lanterna", "Marmita", "Massageador",
+  "Ferramentas", "FoneDeOuvido", "Gimbal", "Lanterna", "Marmita", "Massageador",
   "MiniCompressor", "Mouse", "Pilha", "Projetores", "Radios", "RelogioSmartWatch", "Suporte", "Tvbox", "VideoGame"
 ];
 
@@ -106,7 +106,7 @@ async function carregarProdutos(categoriaSelecionada, termoBusca = "") {
     const card = document.createElement("div");
     card.classList.add("card-produto");
 
-    const nomeAbreviado = p.nome.length > 40 ? p.nome.slice(0, 40) + "..." : p.nome;
+    const nomeAbreviado = p.nome.length > 35 ? p.nome.slice(0, 35) + "..." : p.nome;
     const preco = Number(p.preco);
     const precoPromo = Number(p.precoPromocional);
 
